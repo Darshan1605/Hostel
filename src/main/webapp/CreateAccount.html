@@ -3,18 +3,66 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Insert title here</title>
+<style>
+
+	.a{
+    background: none;
+    background-color: #00a400;
+    border: none;
+    border-radius: 6px;
+    box-shadow: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    height: 36px;
+    overflow: hidden;
+    padding: 0 32px;
+    text-shadow: none;
+    cursor: pointer;
+}
+
+	
+	#b{
+	
+    font-size: 12px;
+    padding: 8px 10px;
+	}
+	#h{
+	font-style: italic;
+	
+	color: purple;
+	border: 20px;
+	}
+	#l{
+       color: #1877f2;
+   
+    font-size: 17px;
+    line-height: 20px;
+    align-content : center;
+    font-style: italic;
+    
+}
+	
+
+</style>
+
 </head>
 <body>
 <form action="accountcreated" method="post">
 	<Center>
-	<input type="text" placeholder="Name" name = "name"><br><br>
-	<input type="email" placeholder="Email" name = "email"><br><br>
-	<input type="text" placeholder="Age" name = "age"><br><br>
-	<input type="text" placeholder="Contact Number" name = "contact"><br><br>
+	<div >
+	<h2 id ="h">Sign up</h2>
+	<input id = "b" type="text" placeholder="Name" name = "name" required="required"><br><br>
+	<input id = "b" type="email" placeholder="Email" name = "email" required="required"><br><br>
+	<input id = "b" type="text" placeholder="Age" name = "age" required="required"><br><br>
+	<input id = "b" type="text" placeholder="Contact Number" name = "contact" required="required"><br><br>
 	
-	<input type="password" placeholder="Password" name = "password"><br><br>
-	<input type="password" placeholder="Re-enter Password" name = "password1"><br><br>
-	<input type="submit" value = "Create Account">
+	<input id = "b" type="password" placeholder="Password" name = "password" required="required"><br><br>
+	<input id = "b" type="password" placeholder="Re-enter Password" name = "password1" required="required"><br><br>
+	</div>
+	<input class = "a" type="submit" value = "Create Account"><br><br>
+	
+	Already have an account <a id = "l" href="http://localhost:8080/schoolmanagement/Login.html">Login</a> here
 	
 	</Center>
 	

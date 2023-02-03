@@ -3,16 +3,59 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Teacher Section</title>
+<style>
+
+	.a{
+    background: none;
+    background-color: rgb(196, 213, 40);
+    border: none;
+    border-radius: 6px;
+    box-shadow: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    height: 36px;
+    overflow: hidden;
+    padding: 0 32px;
+    text-shadow: none;
+    cursor: pointer;
+}
+
+	
+	#b{
+	
+    font-size: 12px;
+    padding: 8px 10px;
+	}
+	#h{
+	font-style: italic;
+	
+	color: purple;
+	border: 20px;
+	}
+	#l{
+       color: red;
+   
+    font-size: 17px;
+    line-height: 20px;
+    align-content : center;
+    font-style: italic;
+    
+}
+	
+
+</style>
 </head>
 <body>
 <form action="teacherUpdated" method="post">
 	<center>
-	<input type = "text" placeholder="Id" name = "id"><br><br>
-	<input type = "text" placeholder="Name" name = "name"><br><br>
-	<input type = "text" placeholder="Contact" name = "contact"><br><br>
-	<input type = "text" placeholder="Salary" name = "salary"><br><br>
-	<input type="submit" value="Update"><br><br>
-	<a href="http://localhost:8080/schoolmanagement/Principal.html">Main Menu</a>
+	<h2 id ="h">Update Teacher Information</h2>
+	<input id = "b" type = "text" placeholder="Id" name = "id" required="required"><br><br>
+	<input id = "b" type = "text" placeholder="Name" name = "name" required="required"><br><br>
+	<input id = "b" type = "text" placeholder="Contact" name = "contact" required="required"><br><br>
+	<input id = "b" type = "text" placeholder="Salary" name = "salary" required="required"><br><br>
+	<input class = "a" type="submit" value="Update"><br><br>
+	<a id = "l" href="http://localhost:8080/schoolmanagement/Teachers.jsp">Cancel</a>
 	</center>
 </form>
 

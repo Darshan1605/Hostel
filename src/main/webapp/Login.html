@@ -3,14 +3,69 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Principal Login</title>
+<style>
+.container{
+            color: rgb(0, 0, 0);
+            border: 2px solid rgb(248, 234, 234);
+            padding: 20px;
+            width: 233px;
+            height: 250px;
+            background-color: rgb(248, 234, 234);
+            min-width: 100px;
+            margin: 20px;
+            border-radius: 20px;
+            box-shadow: black;
+        }
+        
+	#b{
+	
+    font-size: 18px;
+    padding: 8px 10px;
+    border-radius: 20px;
+    border-color: navy;
+	}
+	#a{
+    background: none;
+    background-color: #00a400;
+    border: none;
+    border-radius: 6px;
+    box-shadow: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    height: 36px;
+    overflow: hidden;
+    padding: 0 32px;
+    text-shadow: none;
+    cursor: pointer;
+}
+	#h{
+	font-style: italic;
+	
+	color: purple;
+	border: 20px;
+	}
+	#l{
+    color: #1877f2;
+    font-size: 17px;
+    line-height: 20px;
+    align-content : center;
+	font-style:italic; 
+	}
+	
+	
+        
+</style>
 </head>
 <body>
 <form action="Login" method="post"><Center>
-	<h3>Principal Login</h3>
-	<input type = "text" placeholder="Email" name = "email"><br><br>
-	<input type = "Password" placeholder="Password" name = "password"><br><br>
-	<input type = "submit" Value = "Login">
-
+<div class = "container">
+	<h2 id = "h">Principal Login</h2>
+	<input id = "b" type = "text" placeholder="Email" name = "email" required="required"><br><br>
+	<input id = "b" type = "Password" placeholder="Password" name = "password" required="required"><br><br>
+	<input id = "a" type = "submit" Value = "Login"><br><br>
+	Dont have an account <a id = "l" href="http://localhost:8080/schoolmanagement/CreateAccount.html">Sign up</a> here
+</div>
 </Center>
 </form>
 

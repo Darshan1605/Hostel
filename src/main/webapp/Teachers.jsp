@@ -14,6 +14,64 @@
 <title>Teacher Section</title>
 </head>
 <body>
+<style>
+.a{
+    background: none;
+    background-color: #00a400;
+    border: none;
+    border-radius: 6px;
+    box-shadow: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    height: 36px;
+    overflow: hidden;
+    padding: 0 32px;
+    text-shadow: none;
+    cursor: pointer;
+}
+.r{
+    background: none;
+    background-color: red;
+    border: none;
+    border-radius: 6px;
+    box-shadow: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    height: 36px;
+    overflow: hidden;
+    padding: 0 32px;
+    text-shadow: none;
+    cursor: pointer;
+}
+.u{
+    background: none;
+    background-color: rgb(196, 213, 40);
+    border: none;
+    border-radius: 6px;
+    box-shadow: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    height: 36px;
+    overflow: hidden;
+    padding: 0 32px;
+    text-shadow: none;
+    cursor: pointer;
+}
+#m{
+	font-size: 20px;
+	font-style: italic;
+
+}
+#h{
+	font-style: italic;
+	
+	color: purple;
+	border: 20px;
+	}
+</style>
 <center>
 <% EntityManagerFactory emf = Persistence.createEntityManagerFactory("darshan");
 	EntityManager em = emf.createEntityManager();
@@ -23,7 +81,7 @@
 	List<Teacher> l  = q.getResultList();
 	%>
 	<table cellpadding = "20px" border="1">
-	<h3>Teacher Data</h3>
+	<h3 id="h">Teacher Data</h3>
 		<th>Id</th>
 		<th>Name</th>
 		<th>ContactNo</th>
@@ -41,19 +99,19 @@
 	<br><br>
 	<form action="addteacher" method="post">
 	
-	<input type = "submit" Value = "Add Teacher"><br><br>
+	<input class="a" type = "submit" Value = "Add Teacher"><br><br>
 	</form>
 	
 	<form action="updateteacher" method = "post">
-	<input type = "submit" Value = "Update Teacher"><br><br>
+	<input class = "u" type = "submit" Value = "Update Teacher"><br><br>
 	</form>
 	
 	<form action="removeteacher" method="post">
 	
-	<input type = "submit" Value = "Remove Teacher"><br><br>
+	<input class = "r" type = "submit" Value = "Remove Teacher"><br><br>
 	</form>
 	
-	<a href="http://localhost:8080/schoolmanagement/Principal.html">Main Menu</a><br><br>
+	<a id="m" href="http://localhost:8080/schoolmanagement/Principal.html">Main Menu</a><br><br>
 	
 </center>
 

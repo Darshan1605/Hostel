@@ -3,14 +3,57 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Remove Student</title>
+<style>
+
+	.a{
+    background: none;
+    background-color: red;
+    border: none;
+    border-radius: 6px;
+    box-shadow: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    height: 36px;
+    overflow: hidden;
+    padding: 0 32px;
+    text-shadow: none;
+    cursor: pointer;
+}
+
+	
+	#b{
+	
+    font-size: 12px;
+    padding: 8px 10px;
+	}
+	#h{
+	font-style: italic;
+	
+	color: purple;
+	border: 20px;
+	}
+	#l{
+       color: red;
+   
+    font-size: 17px;
+    line-height: 20px;
+    align-content : center;
+    font-style: italic;
+    
+}
+	
+
+</style>
 </head>
 <body>
 <form action="studentremoved" method ="post">
 	<center>
-	Id of Student:<input type="text" placeholder="ID" name = "id"><br><br>
-	<input type="submit" Value = "Remove">
+	<h2 id = "h">Remove Student</h2>
+	<input id = "b" type="text" placeholder="ID of student" name = "id" required="required"><br><br>
+	<input class = "a" type="submit" Value = "Remove">
 	<br><br>
-	<a href="http://localhost:8080/schoolmanagement/Principal.html">Main Menu</a>
+	<a id = "l" href="http://localhost:8080/schoolmanagement/Student.jsp">Cancel</a>
 	
 	
 	

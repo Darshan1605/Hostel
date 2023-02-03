@@ -5,16 +5,65 @@
 <title>Insert title here</title>
 </head>
 <body>
+<style>
+
+	.a{
+    background: none;
+    background-color: #00a400;
+    border: none;
+    border-radius: 6px;
+    box-shadow: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    height: 36px;
+    overflow: hidden;
+    padding: 0 32px;
+    text-shadow: none;
+    cursor: pointer;
+}
+	
+	#b{
+	
+    font-size: 18px;
+    padding: 8px 10px;
+	}
+	#h{
+	font-style: italic;
+	
+	color: purple;
+	border: 20px;
+	}
+	#l{
+       color: #1877f2;
+   
+    font-size: 17px;
+    line-height: 20px;
+    align-content : center;
+    font-style: italic;
+    
+}
+	
+
+</style>
+
 <form action="studentadded" method = "post"><center>
-	<h5>Fill Below Information for Student</h5>
-	<input type="text" placeholder="Id" name = "id"><br><br>
-	<input type="text" placeholder="Name" name = "name"><br><br>
-	<input type="text" placeholder="Contact Number" name = "contact"><br><br>
-	<input type="text" placeholder="Fees" name = "fees"><br><br>
-	<input type="submit" value="Add Student"><br><br>
-	<a href="http://localhost:8080/schoolmanagement/Principal.html">Main Menu</a>
+	<h3 id = "h">Fill Below Information for Student</h3>
+	<div>
+	<input id = "b" type="text" placeholder="Id" name = "id" required="required"><br><br>
+	<input id = "b" type="text" placeholder="Name" name = "name" required="required"><br><br>
+	<input id = "b" type="text" placeholder="Contact Number" name = "contact" required="required"><br><br>
+	<input id = "b" type="text" placeholder="Fees" name = "fees" required="required"><br><br>
+	<input class="a" type="submit" value="Add Student"><br><br>
+	</div>
+	<div id  = "l">
+	<a id= "l" href="http://localhost:8080/schoolmanagement/Student.jsp" >Main Menu</a>
+	
 </center>
+</div>
 </form>
+
+
 
 </body>
 </html>
